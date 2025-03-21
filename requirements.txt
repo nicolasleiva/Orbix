@@ -1,0 +1,18 @@
+tensorflow>=2.6
+tensorflow-transform
+tensorflow-model-analysis
+tfx
+confluent-kafka
+sgp4
+googleapis-common-protos
+ortools
+fastapi
+uvicorn
+streamlit
+pydeck
+matplotlib
+networkx
+pandas
+numpy
+stellargraph  # Nota: si hay conflictos en Python prueba:
+                # pip install git+https://github.com/stellargraph/stellargraph.git@master
