@@ -37,3 +37,8 @@ API_DEBUG = os.getenv('API_DEBUG', 'False').lower() == 'true'
 
 # Ruta del modelo
 MODEL_PATH = os.getenv('MODEL_PATH', 'models/production/v1')
+
+# Configuración del sistema de alertas cuánticas
+QUANTUM_SIMULATOR_TYPE = os.getenv('QUANTUM_SIMULATOR_TYPE', 'vqe')  # Opciones: 'vqe', 'grover', 'basic'
+QUANTUM_SHOTS = int(os.getenv('QUANTUM_SHOTS', '1000'))  # Número de mediciones en simulación cuántica
+QUANTUM_NOISE_MODEL = os.getenv('QUANTUM_NOISE_MODEL', 'low')  # Opciones: 'low', 'high'

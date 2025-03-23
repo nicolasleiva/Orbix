@@ -17,6 +17,7 @@ Orbix es un sistema avanzado de navegación orbital diseñado para predecir tray
 - **Sistema de Alertas de Colisión:** Cálculo de probabilidades de colisión basado en análisis de trayectorias.
 - **Pipeline de ML con TFX:** Infraestructura completa para entrenamiento, validación y despliegue de modelos.
 - **Análisis en Grafos:** Modelado de relaciones entre satélites y desechos espaciales utilizando StellarGraph.
+- **Cálculos Cuánticos:** Algoritmos cuánticos simulados (VQE y Grover) para mejorar la precisión en predicción de trayectorias y detección de colisiones.
 
 ## Instalación
 

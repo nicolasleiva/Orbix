@@ -1,6 +1,6 @@
 # Mejoras Implementadas en Orbix
 
-Este documento describe las mejoras implementadas en el proyecto Orbix para hacerlo más robusto, mantenible y escalable para entornos de producción.
+Este documento describe las mejoras implementadas en el proyecto Orbix.
 
 ## 1. Ampliación de Cobertura de Pruebas
 

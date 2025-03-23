@@ -1,6 +1,6 @@
 import tensorflow as tf
 import logging
-from .transformer_model import TransformerTrajectoryModel
+from .quantum_trajectory import QuantumTrajectoryModel
 from .config import MODEL_PATH
 
 logger = logging.getLogger("SatelliteWazePro")
@@ -10,20 +10,20 @@ global_model = None
 
 def load_model():
     """
-    Carga los pesos del modelo Transformer desde el directorio de producción.
+    Carga los pesos del modelo cuántico desde el directorio de producción.
     """
     global global_model
-    global_model = TransformerTrajectoryModel()
+    global_model = QuantumTrajectoryModel()
     try:
         global_model.load_weights(MODEL_PATH)
-        logger.info("Modelo Transformer cargado con éxito desde %s", MODEL_PATH)
+        logger.info("Modelo cuántico cargado con éxito desde %s", MODEL_PATH)
     except Exception as e:
         logger.error("Error al cargar el modelo: %s", str(e))
         raise e
 
 def predict_trajectory(tle_data: dict) -> dict:
     """
-    Predice la trayectoria orbital usando el modelo Transformer a partir de datos TLE.
+    Predice la trayectoria orbital usando el modelo cuántico a partir de datos TLE.
     Se espera que tle_data incluya claves 'data' y 'satellite_id'.
     """
     try:
