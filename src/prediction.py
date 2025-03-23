@@ -24,6 +24,7 @@ def load_model():
 def predict_trajectory(tle_data: dict) -> dict:
     """
     Predice la trayectoria orbital usando el modelo Transformer a partir de datos TLE.
+    Se espera que tle_data incluya claves 'data' y 'satellite_id'.
     """
     try:
         input_data = tle_data.get("data", [])

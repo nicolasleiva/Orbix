@@ -1,0 +1,16 @@
+include LICENSE
+include README.md
+include requirements.txt
+include pytest.ini
+include .env.example
+
+recursive-include src *
+recursive-include tests *
+
+prune logs
+prune models
+prune __pycache__
+prune *.pyc
+prune .pytest_cache
+prune .coverage
+prune htmlcov

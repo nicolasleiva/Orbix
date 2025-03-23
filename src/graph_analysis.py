@@ -9,7 +9,7 @@ logger = logging.getLogger("SatelliteWazePro")
 def build_satellite_graph(satellite_data: pd.DataFrame, debris_data: pd.DataFrame) -> StellarGraph:
     """
     Construye un grafo heterogéneo a partir de datos de satélites y desechos.
-    Se espera que 'satellite_data' y 'debris_data' contengan las columnas 'satellite_id' y 'debris_id', respectivamente.
+    Se espera que `satellite_data` y `debris_data` contengan las columnas 'satellite_id' y 'debris_id', respectivamente.
     """
     if satellite_data.empty or debris_data.empty:
         logger.warning("Datos insuficientes para construir el grafo.")
@@ -18,7 +18,7 @@ def build_satellite_graph(satellite_data: pd.DataFrame, debris_data: pd.DataFram
     satellite_nodes = satellite_data.set_index("satellite_id")
     debris_nodes = debris_data.set_index("debris_id")
     
-    # Crear un DataFrame de aristas ficticio basado en interacciones
+    # Crear DataFrame de aristas ficticio basado en interacciones
     edges_df = pd.DataFrame({
         "source": satellite_data['satellite_id'].tolist(),
         "target": debris_data['debris_id'].tolist(),
@@ -41,7 +41,7 @@ def analyze_graph(graph: StellarGraph):
     logger.info("Número de nodos: %d", graph.number_of_nodes())
     logger.info("Número de aristas: %d", graph.number_of_edges())
     
-    # Convertir a NetworkX para una visualización sencilla
+    # Convertir a NetworkX para visualización
     nx_graph = graph.to_networkx()
     pos = nx.spring_layout(nx_graph)
     plt.figure(figsize=(8,6))
