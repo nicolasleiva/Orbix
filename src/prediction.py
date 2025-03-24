@@ -3,7 +3,7 @@ import logging
 from .quantum_trajectory import QuantumTrajectoryModel
 from .config import MODEL_PATH
 
-logger = logging.getLogger("SatelliteWazePro")
+logger = logging.getLogger("Orbix")
 
 # Variable global para almacenar el modelo
 global_model = None

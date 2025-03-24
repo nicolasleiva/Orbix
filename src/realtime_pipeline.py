@@ -3,7 +3,7 @@ import logging
 from confluent_kafka import Producer, Consumer
 from .config import KAFKA_CONFIG
 
-logger = logging.getLogger("SatelliteWazePro")
+logger = logging.getLogger("Orbix")
 
 class RealTimeDataPipeline:
     """

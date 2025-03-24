@@ -3,7 +3,7 @@ import time
 import logging
 from prometheus_client import Gauge, push_to_gateway
 
-logger = logging.getLogger("SatelliteWazePro")
+logger = logging.getLogger("Orbix")
 
 class TelemetryMonitor:
     """

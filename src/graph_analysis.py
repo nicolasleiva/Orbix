@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from stellargraph import StellarGraph
 
-logger = logging.getLogger("SatelliteWazePro")
+logger = logging.getLogger("Orbix")
 
 def build_satellite_graph(satellite_data: pd.DataFrame, debris_data: pd.DataFrame) -> StellarGraph:
     """

@@ -8,11 +8,19 @@ sgp4>=2.22
 googleapis-common-protos>=1.56.4
 ortools>=9.5.2237
 
+# Bibliotecas cuánticas
+qiskit>=0.39.0
+qiskit-aer>=0.11.0
+qiskit-ibmq-provider>=0.19.0
+pennylane>=0.28.0
+pennylane-qiskit>=0.28.0
+
 # API y servicios web
 fastapi>=0.95.1
 uvicorn[standard]>=0.22.0
 pydantic>=1.10.7
 python-dotenv>=1.0.0
+requests>=2.28.0
 
 # Visualización y frontend
 streamlit>=1.22.0

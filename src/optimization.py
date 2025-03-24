@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from ortools.constraint_solver import routing_enums_pb2, pywrapcp
 
-logger = logging.getLogger("SatelliteWazePro")
+logger = logging.getLogger("Orbix")
 
 class OrbitalPathOptimizer:
     """

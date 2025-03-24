@@ -3,7 +3,7 @@ from tfx.components import CsvExampleGen, StatisticsGen, SchemaGen, Transform, T
 from tfx.orchestration.experimental.interactive.interactive_context import InteractiveContext
 from tfx.proto import trainer_pb2, pusher_pb2
 
-logger = logging.getLogger("SatelliteWazePro")
+logger = logging.getLogger("Orbix")
 
 def run_tfx_pipeline():
     """

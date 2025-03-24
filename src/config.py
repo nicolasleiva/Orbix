@@ -42,3 +42,13 @@ MODEL_PATH = os.getenv('MODEL_PATH', 'models/production/v1')
 QUANTUM_SIMULATOR_TYPE = os.getenv('QUANTUM_SIMULATOR_TYPE', 'vqe')  # Opciones: 'vqe', 'grover', 'basic'
 QUANTUM_SHOTS = int(os.getenv('QUANTUM_SHOTS', '1000'))  # Número de mediciones en simulación cuántica
 QUANTUM_NOISE_MODEL = os.getenv('QUANTUM_NOISE_MODEL', 'low')  # Opciones: 'low', 'high'
+
+# Configuración de la API SSC (Space Science Center)
+SSC_API_URL = os.getenv('SSC_API_URL', 'https://sscweb.gsfc.nasa.gov/WS/sscr/2')
+SSC_API_KEY = os.getenv('SSC_API_KEY', 'YVZMezqqb5Zf3HQ2Tz6G3Ckdni04nDTXJZrrQNq2')
+
+# Configuración de la API de SpaceX
+SPACEX_API_URL = os.getenv('SPACEX_API_URL', 'https://api.spacexdata.com/v3')
+
+# Configuración de la API de NOAA
+NOAA_TOKEN = os.getenv('NOAA_TOKEN', 'CFgjhxTTdGlPhzzRymcXRZIeasOovcdf')
