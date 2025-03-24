@@ -4,6 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![TensorFlow 2.6+](https://img.shields.io/badge/tensorflow-2.6+-orange.svg)](https://www.tensorflow.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.68.0+-green.svg)](https://fastapi.tiangolo.com/)
+[![LinkedIn](https://img.shields.io/badge/Linkedin+-blue.svg)](https://www.linkedin.com/in/nicolasleiva/)
 
 Orbix es un sistema avanzado de navegación orbital diseñado para predecir trayectorias, optimizar rutas y proporcionar alertas de colisión en tiempo real para satélites y objetos espaciales.
 
@@ -26,7 +27,7 @@ Orbix es un sistema avanzado de navegación orbital diseñado para predecir tray
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/orbix-team/orbix.git
+   git clone https://github.com/nicolasleiva/orbix.git
    cd orbix
    ```
 
@@ -56,7 +57,7 @@ Orbix es un sistema avanzado de navegación orbital diseñado para predecir tray
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/orbix-team/orbix.git
+   git clone https://github.com/nicolasleiva/orbix.git
    cd orbix
    ```
 
