@@ -164,3 +164,20 @@ class SpaceTrackApi:
         except requests.RequestException as e:
             self.logger.error(f"Error al obtener datos de decaimiento orbital: {str(e)}")
             return {"error": str(e)}
+
+    def authenticate(self):
+        """
+        Autentica con la API de Space-Track usando credenciales.
+        """
+        try:
+            # Intentar obtener credenciales de Streamlit secrets
+            import streamlit as st
+            username = st.secrets["space_track"]["username"]
+            password = st.secrets["space_track"]["password"]
+        except (KeyError, ImportError):
+            # Fallback a variables de entorno
+            username = os.getenv("SPACE_TRACK_USERNAME")
+            password = os.getenv("SPACE_TRACK_PASSWORD")
+            
+        if not username or not password:
+            raise ValueError("Credenciales de Space-Track no encontradas")

@@ -25,8 +25,20 @@ venv/
 env/
 ENV/
 .env
+.streamlit/secrets.toml
 
-# Archivos de logs
+# Archivos de caché y entorno
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Directorios virtuales
+venv/
+env/
+ENV/
+
+# Logs
 logs/
 *.log
 

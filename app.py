@@ -129,6 +129,10 @@ with tab1:
                 model_path = os.path.join(os.path.dirname(__file__), "models", "quantum_trajectory_model.json")
                 if os.path.exists(model_path):
                     model.load_weights(model_path)
+                else:
+                    st.warning("Modelo no encontrado. Se utilizará un modelo base sin entrenar.")
+                    # Inicializar con pesos aleatorios o valores por defecto
+                    model.initialize_default_weights()
                 
                 # Preparar datos para el modelo cuántico
                 if not trajectory_df.empty:
